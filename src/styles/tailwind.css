@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-sm antialiased text-neutral-700;
+  }
+
+  h2 {
+    @apply text-base font-bold;
+  }
+
+  h3 {
+    @apply font-semibold;
+  }
+
+  input, textarea {
+  	font-family: system-ui;
+    border-color: #111111;
+  }
+}
+
