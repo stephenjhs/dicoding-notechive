@@ -31,13 +31,13 @@ export default function Home() {
               </div>
               <NoteList
                 deleteNote={deleteNote}
-                notes={notes.filter((note) => note.title.toLowerCase().includes(query.toLowerCase))}
+                notes={notes.filter((note) => note.title.toLowerCase().includes(query.toLowerCase()))}
                 query={query}
                 toggleArchiveNote={toggleArchiveNote}
               />
               <ArchivedNoteList
                 deleteNote={deleteNote}
-                notes={notes.filter((note) => note.title.toLowerCase().includes(query.toLowerCase))}
+                notes={notes.filter((note) => note.title.toLowerCase().includes(query.toLowerCase()))}
                 query={query}
                 toggleArchiveNote={toggleArchiveNote}
               />
