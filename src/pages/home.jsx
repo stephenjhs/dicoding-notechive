@@ -15,7 +15,7 @@ export default function Home() {
 
   const deleteNote = (id) => setNotes(notes.filter((note) => note.id !== id))
 
-  const toggleArchiveNote = (id) => setNotes((notes) => notes.map((n) => (n.id === id && { ...n, archived: !n.archived })))
+  const toggleArchiveNote = (id) => setNotes((notes) => notes.map((n) => (n.id === id ? { ...n, archived: !n.archived } : n)))
 
   return (
     <Head title="Notechive &ndash; Simpan catatanmu!">
